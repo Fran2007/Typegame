@@ -67,6 +67,7 @@ export const TypingWord = () => {
     }
   };
 
+
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-100 text-gray-800 p-6">
       <div className="max-w-lg w-full bg-white shadow-md rounded-lg p-6">

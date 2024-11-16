@@ -1,50 +1,75 @@
-# React + TypeScript + Vite
+# Typing Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Typing Game is an iteractive application built with React that chanllenges users to type words correctly within a limited time. Test your skills and mental speed as your progress through of blocks of words!
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⏰ **Timer**: You have 60 seconds to type as many words as possible.
+- 📚 **Word Blocks**: Words are displayed in blokcs of 10. Once you complete a block, the next one appears.
+- 🏆 **Scoring System**: Each correct word increase your score.
+- 🎮 **Minimalist and Responsive Interface**: Designed with a clean, modern UI using Tailwindcss.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: For building the user interface.
+- **Typescript**: To add static typing and robustness to the code.
+- **Tailwindcss**: A CSS framework fo fast and modern design.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Follow these steps to run the project locally:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone the repositiry:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+  ```bash
+     git clone https://github.com/your-username/typing-game.git
+     cd typingGame
+  ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the project:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the application in your browser:
+
+  ```bash
+  http://localhost:3000
+  ```
+
+ ## Key Files
+- **src/TypingWord.tsx**: Main game componet.
+- **src/Typing**: Contains the array of words used in the game.
+- **tailwindcss**: Tailwindcss configuration file.
+
+## How to play
+
+1. Click the Start Game button.
+2. Type the words displayed on the screen in the input field.
+3. Once you complete all the words in a block, the next block will appear.
+4. Earn points and improve your typing speed before the timer runs out!
+
+## Customization
+
+# Adjust the game timer
+
+You can modify INITIAL_TIME constant in the TypingWord.tsx file to change the availble time:
+
+   ```tsx
+      const INITIAL_TIME = 60;
+   ```
+# Change the number of words per block
+
+Modify the WORDS_PER_BLOCK constant to adjust the number of words per block.
+
+   ```tsx
+     const WORDS_PER_BLOCK = 10;
+   ```
+ 
