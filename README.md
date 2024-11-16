@@ -22,8 +22,8 @@ Follow these steps to run the project locally:
 1. Clone the repositiry:
 
   ```bash
-     git clone https://github.com/your-username/typing-game.git
-     cd typingGame
+   git clone https://github.com/your-username/typing-game.git
+   cd typingGame
   ```
 
 2. Install dependencies:
@@ -40,11 +40,11 @@ Follow these steps to run the project locally:
 
 4. Open the application in your browser:
 
-  ```bash
-  http://localhost:3000
-  ```
+   ```bash
+   http://localhost:3000
+   ```
 
- ## Key Files
+## Key Files
 - **src/TypingWord.tsx**: Main game componet.
 - **src/Typing**: Contains the array of words used in the game.
 - **tailwindcss**: Tailwindcss configuration file.
@@ -58,18 +58,18 @@ Follow these steps to run the project locally:
 
 ## Customization
 
-# Adjust the game timer
+Adjust the game timer
 
 You can modify INITIAL_TIME constant in the TypingWord.tsx file to change the availble time:
 
    ```tsx
-      const INITIAL_TIME = 60;
+   const INITIAL_TIME = 60;
    ```
-# Change the number of words per block
+Change the number of words per block
 
 Modify the WORDS_PER_BLOCK constant to adjust the number of words per block.
 
    ```tsx
-     const WORDS_PER_BLOCK = 10;
+   const WORDS_PER_BLOCK = 10;
    ```
  
